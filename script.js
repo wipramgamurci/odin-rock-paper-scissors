@@ -27,7 +27,8 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-const playerSelection = prompt("rps?");
+let playerSelection = prompt("rps?");
+playerSelection = playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase();
 const computerSelection = getComputerChoice();
 console.log(computerSelection);
 console.log(playerSelection)
